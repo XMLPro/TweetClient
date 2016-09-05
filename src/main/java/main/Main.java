@@ -1,4 +1,4 @@
-package main.java;
+package main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,6 +13,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        String path = "/scene/base.fxml";
+        Parent root = FXMLLoader.load(getClass().getResource(path));
+        primaryStage.setScene(new Scene(root));
+        primaryStage.setTitle("X Javan");
         primaryStage.show();
     }
 }

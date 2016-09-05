@@ -7,8 +7,18 @@ apply from: 'http://dl.bintray.com/content/shemnon/javafx-gradle/8.1.1/javafx.pl
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+
 javafx {
-    mainClass = 'main.java.Main'
+    mainClass = 'main.Main'
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDirs = ["src/main/java"]
+            includes = ["**/*.fxml"]
+        }
+    }
 }
 
 repositories {

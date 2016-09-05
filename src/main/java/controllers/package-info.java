@@ -3,4 +3,4 @@
  *
  * FXML Controllers package
  */
-package main.java.controllers;
+package controllers;

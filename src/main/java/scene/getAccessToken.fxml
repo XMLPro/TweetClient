@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="200.0" maxWidth="300.0" minHeight="200.0" minWidth="300.0" prefHeight="200.0" prefWidth="300.0"
+            xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="xjavan.controllers.GetAccessToken">
+    <children>
+        <TextField fx:id="verifier" layoutX="70.0" layoutY="148.0"/>
+        <Label layoutX="27.0" layoutY="153.0" text="PIN:"/>
+        <Button fx:id="post" layoutX="238.0" layoutY="148.0" mnemonicParsing="false" onAction="#getToken" text="送信"/>
+        <Hyperlink fx:id="requestURL" layoutX="42.0" layoutY="51.0" prefHeight="75.0" prefWidth="220.0"
+                   AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" onAction="#getVerifier"
+        />
+        <Label fx:id="postVerifier" layoutX="40.0" layoutY="14.0" prefHeight="24.0" prefWidth="220.0"
+               text="PINコードを入力してください" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0"/>
+    </children>
+</AnchorPane>
